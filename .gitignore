@@ -1,0 +1,78 @@
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+
+# Bundler
+.bundle/
+Gemfile.lock
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+log/
+
+# Temporary files
+tmp/
+temp/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Node modules (if using any Node.js tools)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build artifacts
+dist/
+build/
+
+# Backup files
+*.bak
+*.backup
+
+# Cache directories
+.cache/
+.asset-cache/
+.jekyll-assets-cache/
+
+# Plugin files
+assets/js/plugins/
+assets/js/vendor/
+assets/js/_main.js
+
+# Configuration files that might contain sensitive data
+config/
+Capfile
+Rakefile
+Gruntfile.js
+gulpfile.js
+package.json
+package-lock.json
+yarn.lock
+
+# Documentation
+README
+CHANGELOG
+LICENSE 
