@@ -4,6 +4,70 @@ layout: archive
 
 {{ content }}
 
+<!-- Search Bar -->
+<div class="search-container" style="margin: 2em 0; text-align: center;">
+  <div class="search-box" style="max-width: 500px; margin: 0 auto; position: relative;">
+    <input type="text" id="search-input" placeholder="Search posts..." style="width: 100%; padding: 12px 20px; font-size: 16px; border: 2px solid #e9ecef; border-radius: 25px; outline: none; transition: border-color 0.3s ease; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
+    <button type="button" id="search-button" style="position: absolute; right: 5px; top: 50%; transform: translateY(-50%); background: #007acc; color: white; border: none; border-radius: 20px; padding: 8px 15px; cursor: pointer; transition: background-color 0.3s ease;">
+      <i class="fas fa-search" style="font-size: 14px;"></i>
+    </button>
+  </div>
+  <div id="search-results" style="margin-top: 1em; text-align: left; max-width: 800px; margin-left: auto; margin-right: auto;"></div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const searchInput = document.getElementById('search-input');
+  const searchButton = document.getElementById('search-button');
+  const searchResults = document.getElementById('search-results');
+  
+  function performSearch() {
+    const query = searchInput.value.toLowerCase().trim();
+    if (query === '') {
+      searchResults.innerHTML = '';
+      return;
+    }
+    
+    // Get all posts
+    const posts = document.querySelectorAll('.archive__item');
+    let results = [];
+    
+    posts.forEach(post => {
+      const title = post.querySelector('.archive__item-title a').textContent.toLowerCase();
+      const excerpt = post.querySelector('.archive__item-excerpt') ? 
+        post.querySelector('.archive__item-excerpt').textContent.toLowerCase() : '';
+      
+      if (title.includes(query) || excerpt.includes(query)) {
+        results.push(post.cloneNode(true));
+      }
+    });
+    
+    // Display results
+    if (results.length > 0) {
+      searchResults.innerHTML = '<h4 style="margin-bottom: 1em; color: #333;">Search Results:</h4>';
+      results.forEach(result => {
+        searchResults.appendChild(result);
+      });
+    } else {
+      searchResults.innerHTML = '<p style="text-align: center; color: #666; font-style: italic;">No posts found matching your search.</p>';
+    }
+  }
+  
+  // Search on button click
+  searchButton.addEventListener('click', performSearch);
+  
+  // Search on Enter key
+  searchInput.addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+      performSearch();
+    }
+  });
+  
+  // Real-time search (optional - uncomment if you want it)
+  // searchInput.addEventListener('input', performSearch);
+});
+</script>
+
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
 {% if paginator %}

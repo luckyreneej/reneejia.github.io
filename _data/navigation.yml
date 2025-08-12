@@ -1,11 +1,17 @@
 # main links
 main:
   - title: "About"
-    url: /_pages/about/
+    url: /about/
   - title: "Blogs"
-    url: /year-archive/
+    url: /blog/
   - title: "Publications"
-    url: /_pages/publications/
+    url: /publications/
+  - title: "Notes"
+    url: /notes/
+  - title: "AI Learning Guide"
+    url: /ai-learning-guide/
+  - title: "Poker"
+    url: /poker/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"

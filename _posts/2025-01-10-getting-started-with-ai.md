@@ -1,9 +1,11 @@
 ---
 title: "AI Beginner's Guide: Learning Artificial Intelligence from Scratch"
 date: 2025-01-10
-categories: [AI, Tutorial]
-tags: [artificial intelligence, machine learning, beginner]
+categories: [AI Learning Guide]
+tags: [artificial intelligence, machine learning, beginner, learning path, resources]
 author_profile: true
+read_time: "7-10 min read"
+layout: posts
 ---
 
 Artificial Intelligence (AI) is one of the most exciting technology fields today. This article will provide you with a comprehensive guide to getting started with AI.
