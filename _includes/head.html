@@ -66,7 +66,7 @@
     font-weight: 700 !important;
     letter-spacing: -0.02em !important;
     color: #1a1a1a !important;
-    border-bottom: 2px solid #3498db !important;
+    border-bottom: 2px solid #1e3a8a !important;
     padding-bottom: 0.3em !important;
   }
   
@@ -78,7 +78,7 @@
     font-weight: 600 !important;
     letter-spacing: -0.01em !important;
     color: #2c3e50 !important;
-    border-left: 3px solid #3498db !important;
+    border-left: 3px solid #1e3a8a !important;
     padding-left: 0.8em !important;
   }
   
@@ -123,7 +123,7 @@
     font-size: 1.5em !important;
     font-weight: 700 !important;
     color: #1a1a1a !important;
-    border-bottom: 2px solid #3498db !important;
+    border-bottom: 2px solid #1e3a8a !important;
     padding-bottom: 0.2em !important;
   }
   
@@ -131,7 +131,7 @@
     font-size: 1.2em !important;
     font-weight: 600 !important;
     color: #2c3e50 !important;
-    border-left: 2px solid #3498db !important;
+    border-left: 2px solid #1e3a8a !important;
     padding-left: 0.6em !important;
   }
   
@@ -370,7 +370,7 @@
     font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif !important;
     font-weight: 700 !important;
     color: #1a1a1a !important;
-    border-bottom: 2px solid #3498db !important;
+    border-bottom: 2px solid #1e3a8a !important;
     padding-bottom: 0.2em !important;
   }
   
@@ -381,7 +381,7 @@
     font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif !important;
     font-weight: 600 !important;
     color: #2c3e50 !important;
-    border-left: 2px solid #3498db !important;
+    border-left: 2px solid #1e3a8a !important;
     padding-left: 0.6em !important;
   }
   
@@ -412,15 +412,15 @@
   
   /* Enhanced tech styling for links */
   .page__content a, .post__content a {
-    color: #007acc !important;
+    color: #1e40af !important;
     text-decoration: none !important;
     border-bottom: 1px solid transparent !important;
     transition: all 0.2s ease !important;
   }
   
   .page__content a:hover, .post__content a:hover {
-    color: #005a9e !important;
-    border-bottom-color: #007acc !important;
+    color: #1d4ed8 !important;
+    border-bottom-color: #1e40af !important;
   }
   
   /* Enhanced styling for strong and emphasis */
@@ -465,6 +465,326 @@
   .posts *,
   .single * {
     font-size: inherit !important;
+  }
+</style>
+
+<!--
+  The <head> of the document
+  ===========================
+  No file should be added to the head section of this document.
+  The head section of the document is built from these files:
+    * _config.yml
+    * title.html
+    * meta.html
+    * links.html
+    * favicons.html
+    * feed.html
+    * stylesheets.html
+    * scripts.html
+-->
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+<!-- Custom Styles -->
+<style>
+  /* Global Font Settings */
+  body, html {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+    font-weight: 300;
+    line-height: 1.6;
+  }
+
+  /* Typography Improvements */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 1.3;
+  }
+
+  h1 { font-size: 2.2em; margin-bottom: 0.8em; }
+  h2 { font-size: 1.8em; margin-bottom: 0.7em; }
+  h3 { font-size: 1.5em; margin-bottom: 0.6em; }
+  h4 { font-size: 1.3em; margin-bottom: 0.5em; }
+  h5 { font-size: 1.1em; margin-bottom: 0.4em; }
+  h6 { font-size: 1em; margin-bottom: 0.3em; }
+
+
+
+  /* Content Styling */
+  .page__content, .post__content {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+  }
+
+  .page__content p, .post__content p {
+    margin-bottom: 1.2em;
+    text-align: justify;
+  }
+
+  /* Navigation Improvements - Complete Redesign */
+  .masthead {
+    background: #1e3a8a !important;
+    box-shadow: 0 4px 20px rgba(30, 58, 138, 0.3);
+    border: none !important;
+    padding: 1em 0;
+    position: relative;
+  }
+
+  /* Add decorative line below navigation */
+  .masthead::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #6b7280;
+    box-shadow: 0 2px 8px rgba(107, 114, 128, 0.4);
+  }
+
+  /* Remove ALL border lines, boxes, and gradients */
+  .masthead::before,
+  .masthead__inner-wrap::before,
+  .masthead__inner-wrap::after,
+  .masthead__title::before,
+  .masthead__title::after {
+    display: none !important;
+    content: none !important;
+  }
+
+  .masthead__inner-wrap {
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+  }
+
+  /* Remove any theme default borders and backgrounds */
+  .masthead,
+  .masthead__inner-wrap,
+  .masthead__menu,
+  .masthead__menu-item,
+  .masthead__title,
+  .masthead__title a {
+    border: none !important;
+    border-bottom: none !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    background: none !important;
+    box-shadow: none !important;
+  }
+
+  /* Site title styling - no white box */
+  .masthead__title {
+    font-weight: 700;
+    font-size: 3.0em;
+    color: white !important;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    background: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Override site-title styles with higher priority */
+  .site-title {
+    font-weight: 700 !important;
+    font-size: 1.4em !important;
+    color: #374151 !important;
+    text-shadow: none !important;
+    background: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    text-decoration: none !important;
+  }
+
+  .masthead__title a {
+    color: white !important;
+    text-decoration: none;
+    background: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Navigation menu items */
+  .masthead__menu-item {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    font-size: 1.1em;
+    color: rgba(255,255,255,0.9) !important;
+    transition: all 0.3s ease;
+    padding: 0.5em 1em;
+    border-radius: 6px;
+    margin: 0 0.2em;
+    border: none !important;
+    background: none !important;
+  }
+
+  .masthead__menu-item:hover {
+    color: #1e40af !important;
+    background: rgba(255,255,255,0.1) !important;
+    transform: translateY(-2px);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  }
+
+  /* Active menu item */
+  .masthead__menu-item--lg.is--active {
+    color: #1e40af !important;
+    background: rgba(255,255,255,0.15) !important;
+    border-radius: 6px;
+  }
+
+  /* Button Styling */
+  .btn, .btn--primary, .btn--success, .btn--warning, .btn--danger, .btn--info {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+
+  /* Card-like Elements */
+  .notice, .notice--primary, .notice--info, .notice--warning, .notice--success, .notice--danger {
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    padding: 1.5em;
+    margin: 1.5em 0;
+  }
+
+  /* Link Styling */
+  a {
+    color: #1e3a8a;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+  }
+
+  a:hover {
+    color: #2563eb;
+    border-bottom-color: #2563eb;
+  }
+
+  /* Code Blocks */
+  code, pre {
+    font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+    background: #f8f9fa;
+    border-radius: 6px;
+    padding: 0.2em 0.4em;
+  }
+
+  pre {
+    background: #1e293b;
+    color: #e2e8f0;
+    padding: 1em;
+    border-radius: 8px;
+    overflow-x: auto;
+  }
+
+  /* Table Styling */
+  table {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  th {
+    background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+    color: white;
+    font-weight: 500;
+    padding: 12px;
+  }
+
+  td {
+    padding: 12px;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  tr:hover {
+    background-color: #f8f9fa;
+  }
+
+  /* Footer Improvements */
+  .page__footer {
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+    color: white;
+    padding: 2em 0;
+    margin-top: 3em;
+  }
+
+  .page__footer a {
+    color: #3b82f6;
+  }
+
+  .page__footer a:hover {
+    color: #60a5fa;
+  }
+
+  /* Sidebar Improvements */
+  .sidebar {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 1.5em;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+
+  /* Archive and List Styling */
+  .archive__item-title {
+    font-weight: 500;
+    color: #1e293b;
+  }
+
+  .archive__item-title:hover {
+    color: #2563eb;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .page__content, .post__content {
+      font-size: 15px;
+    }
+    
+    h1 { font-size: 1.8em; }
+    h2 { font-size: 1.5em; }
+    h3 { font-size: 1.3em; }
+  }
+
+  /* Custom Animations */
+  .fade-in {
+    animation: fadeIn 0.6s ease-in;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Enhanced Focus States */
+  button:focus, input:focus, textarea:focus, select:focus {
+    outline: 2px solid #1e3a8a;
+    outline-offset: 2px;
+  }
+
+  /* Hide auto-generated page titles to avoid duplication */
+  .page__title {
+    display: none !important;
+  }
+  
+  /* Hide the entire header section that contains auto-generated titles */
+  .page header {
+    display: none !important;
   }
 </style>
 

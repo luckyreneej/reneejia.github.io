@@ -14,7 +14,7 @@ When I'm not working on AI research, you might find me at the poker tables! I'm 
 I've been fortunate to achieve some notable results in various tournaments. You can view my complete tournament history and statistics at:
 
 <div style="text-align: center; margin: 2em 0;">
-  <a href="https://pokerdb.thehendonmob.com/player.php?a=r&n=1103327" target="_blank" style="display: inline-block; padding: 10px 20px; background: linear-gradient(135deg, #2c3e50, #34495e); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 13px; font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; transition: all 0.3s ease; box-shadow: 0 4px 8px rgba(0,0,0,0.2); border: 2px solid #34495e; letter-spacing: 0.5px;">
+  <a href="https://pokerdb.thehendonmob.com/player.php?a=r&n=1103327" target="_blank" style="display: inline-block; padding: 10px 20px; background: #d1d5db; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 13px; font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; transition: all 0.3s ease; box-shadow: 0 4px 8px rgba(209, 213, 219, 0.3); border: 2px solid #d1d5db; letter-spacing: 0.5px;">
     <i class="fas fa-external-link-alt" style="margin-right: 8px; font-size: 11px;"></i>
     View My Hendon Mob Profile
   </a>

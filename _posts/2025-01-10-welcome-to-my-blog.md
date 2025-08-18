@@ -1,6 +1,6 @@
 ---
 title: "Welcome to My Blog"
-date: 2025-01-10
+date: 2025-01-05
 categories: [Blog]
 tags: [welcome, introduction]
 author_profile: true
@@ -8,7 +8,7 @@ read_time: "< 5 min read"
 layout: posts
 ---
 
-Hey there! I'm Renee Jia, a Research Engineer at Meta working on Large Language Models and Large-Scale User Sequence Modeling.
+Hey there! I'm Renee Jia, an AI Research Engineer working on Large Language Models and Large-Scale User Sequence Modeling.
 
 ![Renee Jia]({{ site.url }}{{ site.baseurl }}/assets/images/bio-photo.jpg){: .align-right width="200px"}
 
