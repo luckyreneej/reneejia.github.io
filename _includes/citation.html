@@ -1,0 +1,102 @@
+{% comment %}
+  Citation component for academic blog posts
+  
+  Usage:
+  {% include citation.html 
+    title="Paper Title"
+    author="Author Name"
+    journal="Journal Name"
+    year="2024"
+    url="https://example.com"
+    doi="10.1000/example"
+    bibtex_key="reneejia2024title"
+  %}
+{% endcomment %}
+
+{% if include.title and include.author %}
+<div class="citation-block">
+  <div class="citation-header">
+    <h2>Cited as:</h2>
+  </div>
+  
+  <div class="citation-content">
+    <div class="citation-bibtex">
+      <code style="color: #495057 !important;">
+@article{reneejia{{ include.year }}{{ include.title | slugify }},
+  title   = "{{ include.title }}",
+  author  = "{{ include.author }}",
+{% if include.journal %}  journal = "{{ include.journal }}",{% endif %}
+  year    = "{{ include.year }}",
+{% if include.url %}  url     = "{{ include.url }}"{% endif %}{% if include.doi %},{% endif %}
+{% if include.doi %}  doi     = "{{ include.doi }}"{% endif %}
+}
+      </code>
+    </div>
+    
+    <div class="citation-actions">
+      <button class="btn btn--small btn--gray copy-bibtex" 
+              data-clipboard-target=".citation-bibtex code"
+              title="Copy BibTeX">
+        <i class="fas fa-copy"></i> Copy BibTeX
+      </button>
+      
+      {% if include.url %}
+      <a href="{{ include.url }}" class="btn btn--small btn--gray" target="_blank" rel="noopener">
+        <i class="fas fa-external-link-alt"></i> View Article
+      </a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const copyButtons = document.querySelectorAll('.copy-bibtex');
+  
+  copyButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const target = this.getAttribute('data-clipboard-target');
+      const codeElement = document.querySelector(target);
+      
+      if (codeElement) {
+        const text = codeElement.textContent;
+        
+        // Copy to clipboard
+        if (navigator.clipboard && window.isSecureContext) {
+          navigator.clipboard.writeText(text).then(() => {
+            this.innerHTML = '<i class="fas fa-check"></i> Copied!';
+            this.classList.add('btn--success');
+            
+            setTimeout(() => {
+              this.innerHTML = '<i class="fas fa-copy"></i> Copy BibTeX';
+              this.classList.remove('btn--success');
+            }, 2000);
+          });
+        } else {
+          // Fallback for older browsers
+          const textarea = document.createElement('textarea');
+          textarea.value = text;
+          document.body.appendChild(textarea);
+          textarea.select();
+          
+          try {
+            document.execCommand('copy');
+            this.innerHTML = '<i class="fas fa-check"></i> Copied!';
+            this.classList.add('btn--success');
+            
+            setTimeout(() => {
+              this.innerHTML = '<i class="fas fa-copy"></i> Copy BibTeX';
+              this.classList.remove('btn--success');
+            }, 2000);
+          } catch (err) {
+            console.error('Failed to copy: ', err);
+          }
+          
+          document.body.removeChild(textarea);
+        }
+      }
+    });
+  });
+});
+</script>
+{% endif %}

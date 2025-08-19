@@ -26,12 +26,12 @@
   /* Import modern tech fonts */
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Roboto:wght@300;400;500;700&display=swap');
   
-  /* Global font size reset - force small fonts everywhere */
+  /* Global font size reset - force 14px fonts everywhere */
   body, html {
-    font-size: 12px !important;
+    font-size: 14px !important;
   }
   
-  /* Reset all content areas to small fonts */
+  /* Reset all content areas to 14px fonts */
   .page__content,
   .post__content,
   .archive,
@@ -40,7 +40,7 @@
   .entry-content,
   .post-content,
   .article-content {
-    font-size: 12px !important;
+    font-size: 14px !important;
     line-height: 1.6 !important;
     font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif !important;
   }
@@ -49,7 +49,7 @@
   
   /* Page content specific adjustments with Roboto font */
   .page__content {
-    font-size: 12px !important;
+    font-size: 14px !important;
     line-height: 1.6 !important;
     font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif !important;
     font-weight: 400 !important;
@@ -106,7 +106,7 @@
   .archive .post__content,
   .posts .page__content,
   .posts .post__content {
-    font-size: 12px !important;
+    font-size: 14px !important;
     line-height: 1.6 !important;
     font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif !important;
     color: #2c3e50 !important;
@@ -165,7 +165,7 @@
   /* AI Learning Guide specific styling */
   .ai-learning-guide .page__content,
   .ai-learning-guide .post__content {
-    font-size: 12px !important;
+    font-size: 14px !important;
     line-height: 1.6 !important;
     font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif !important;
   }
@@ -175,7 +175,7 @@
   .layout-posts .post__content,
   .layout-archive .page__content,
   .layout-archive .post__content {
-    font-size: 12px !important;
+    font-size: 14px !important;
     line-height: 1.6 !important;
     font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif !important;
     color: #2c3e50 !important;
@@ -185,7 +185,7 @@
   .entry-content,
   .post-content,
   .article-content {
-    font-size: 12px !important;
+    font-size: 14px !important;
     line-height: 1.6 !important;
     font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif !important;
     color: #2c3e50 !important;
@@ -230,7 +230,7 @@
   .archive .post__content,
   .posts .page__content,
   .posts .post__content {
-    font-size: 12px !important;
+    font-size: 14px !important;
     line-height: 1.6 !important;
     font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif !important;
   }
@@ -334,7 +334,7 @@
   
   /* Post content specific adjustments with tech fonts */
   .post__content {
-    font-size: 12px !important;
+    font-size: 14px !important;
     line-height: 1.6 !important;
     font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif !important;
     color: #2c3e50 !important;
@@ -453,7 +453,7 @@
   [class*="content"],
   [class*="post"],
   [class*="article"] {
-    font-size: 12px !important;
+    font-size: 14px !important;
     line-height: 1.6 !important;
     font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif !important;
   }
@@ -465,6 +465,25 @@
   .posts *,
   .single * {
     font-size: inherit !important;
+  }
+  
+  /* Override citation styles to use 10px */
+  .citation-header {
+    font-size: 10px !important;
+    background: transparent !important;
+  }
+  
+  .citation-bibtex {
+    background: transparent !important;
+  }
+  
+  .citation-bibtex code {
+    font-size: 10px !important;
+    background: transparent !important;
+  }
+  
+  .citation-actions .btn {
+    font-size: 12px !important;
   }
 </style>
 

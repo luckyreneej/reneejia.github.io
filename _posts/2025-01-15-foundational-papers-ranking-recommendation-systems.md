@@ -24,7 +24,7 @@ This post curates the **classic works (1970s–2010s)** that every AI engineer w
 
 ---
 
-## 🔍 1. Ranking Foundations
+## 1. Ranking Foundations
 
 ### **Probabilistic Models & Lexical Retrieval**
 
@@ -47,11 +47,11 @@ This post curates the **classic works (1970s–2010s)** that every AI engineer w
 
 - **[LambdaMART (Burges, 2010)](https://www.microsoft.com/en-us/research/publication/from-ranknet-to-lambdarank-to-lambdamart-an-overview/)**  
   Combined LambdaRank with gradient-boosted decision trees.  
-  🔑 **Still the de facto industry standard** for large-scale ranking pipelines.
+  **Still the de facto industry standard** for large-scale ranking pipelines.
 
 ---
 
-## 👥 2. Recommendation Foundations
+## 2. Recommendation Foundations
 
 ### **Collaborative Filtering (CF)**
 
@@ -71,18 +71,18 @@ This post curates the **classic works (1970s–2010s)** that every AI engineer w
 
 - **[Factorization Machines (Rendle, 2010)](https://www.csie.ntu.edu.tw/~b97053/paper/Rendle2010FM.pdf)**  
   Generalized MF to arbitrary sparse features, allowing second-order interactions.  
-  🔑 **Direct ancestor of modern feature interaction models** like DeepFM.
+  **Direct ancestor of modern feature interaction models** like DeepFM.
 
 ---
 
-## 📐 3. Evaluation & Benchmarks
+## 3. Evaluation & Benchmarks
 
 - **[Precision, Recall, F-measure (van Rijsbergen, 1979)](https://www.worldcat.org/oclc/10686444)**  
   Core IR evaluation metrics still taught today.
 
 - **[Discounted Cumulative Gain (DCG/NDCG) – Järvelin & Kekäläinen, 2002](https://dl.acm.org/doi/10.1145/582415.582418)**  
   A metric designed specifically for **ranking quality**.  
-  🔑 Still the gold standard for search and recommendation evaluation.
+  Still the gold standard for search and recommendation evaluation.
 
 - **[LETOR Benchmark (Liu et al., 2007)](https://www.microsoft.com/en-us/research/project/letor-learning-rank-information-retrieval/)**  
   First **public learning-to-rank dataset**, crucial for standardizing comparisons.
@@ -92,7 +92,7 @@ This post curates the **classic works (1970s–2010s)** that every AI engineer w
 
 ---
 
-## 🧠 Why These Papers Still Matter
+## Why These Papers Still Matter
 
 1. **Conceptual clarity**: Introduced pairwise vs. listwise losses, factorization, and ranking metrics.
 2. **Still in use**: BM25, LambdaMART, and Factorization Machines remain in real-world production pipelines.
@@ -100,11 +100,22 @@ This post curates the **classic works (1970s–2010s)** that every AI engineer w
 
 ---
 
-## 🚀 Suggested Reading Order
+## Suggested Reading Order
 
 1. **Start with BM25 (1994)** → understand lexical IR baselines.
 2. **Move to RankNet → LambdaMART (2005–2010)** → grasp machine-learned ranking.
 3. **Study MF → FM (2009–2010)** → core recommendation models.
 4. **Finish with NDCG + LETOR** → evaluation and benchmarks.
+
+---
+
+{% include citation.html 
+  title="Classic Foundational Papers on Ranking & Recommendation Systems"
+  author="Renee Jia"
+  journal="renee-jia.github.io"
+  year="2025"
+  url="https://renee-jia.github.io/ai-learning-guide/classic-foundational-papers-ranking-recommendation-systems/"
+  bibtex_key="reneejia2025foundational"
+%}
 
 

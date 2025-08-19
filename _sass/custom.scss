@@ -1,0 +1,186 @@
+/* Custom Styles */
+/* Add your custom styles here */
+
+/* Override font sizes for better readability */
+body {
+  font-size: 14px !important;
+}
+
+.page__content {
+  p, li, dl {
+    font-size: 14px !important;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit !important;
+  }
+}
+
+/* Ensure main content area has proper font size */
+.entry__content,
+.post__content,
+.page__content {
+  font-size: 14px !important;
+  
+  p, li, dl, blockquote {
+    font-size: 14px !important;
+  }
+}
+
+/* Override theme's default font size for page content */
+.page__content {
+  p, li, dl {
+    font-size: 14px !important;
+  }
+}
+
+/* Additional specificity to ensure font size is applied */
+.page__content p,
+.page__content li,
+.page__content dl,
+.page__content blockquote {
+  font-size: 14px !important;
+}
+
+/* Citation block styles */
+.citation-block {
+  margin: 1.5rem 0;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
+  background: inherit;
+  overflow: hidden;
+}
+
+.citation-header {
+  background: transparent;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 0.3rem 0.6rem;
+  font-size: 10px;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.citation-content {
+  padding: 0.6rem;
+  background: inherit;
+}
+
+.citation-bibtex {
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  padding: 0.6rem;
+  margin-bottom: 0.5rem;
+  overflow-x: auto;
+}
+
+.citation-bibtex code {
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', monospace;
+  font-size: 10px;
+  line-height: 1.4;
+  color: #495057 !important; /* Dark grey color instead of red */
+  white-space: pre;
+  display: block;
+}
+
+.citation-actions {
+  display: flex;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+}
+
+.citation-actions .btn {
+  font-size: 12px;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.citation-actions .btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.btn--gray {
+  background-color: rgba(108, 117, 125, 0.8);
+  border-color: rgba(108, 117, 125, 0.6);
+  color: white;
+}
+
+.btn--gray:hover {
+  background-color: rgba(73, 80, 87, 0.9);
+  border-color: rgba(73, 80, 87, 0.7);
+}
+
+.btn--success {
+  background-color: rgba(40, 167, 69, 0.9);
+  border-color: rgba(40, 167, 69, 0.8);
+  color: white;
+}
+
+/* Override any potential red colors in citations to use dark grey */
+.citation-block,
+.citation-block *,
+.citation-bibtex,
+.citation-bibtex * {
+  color: #495057 !important; /* Dark grey (#495057) instead of red */
+}
+
+.citation-bibtex code {
+  color: #495057 !important; /* Ensure code text is dark grey */
+}
+
+/* More specific overrides to force dark grey */
+.citation-bibtex code,
+.citation-bibtex code *,
+.citation-bibtex pre,
+.citation-bibtex pre * {
+  color: #495057 !important;
+}
+
+/* Override any theme-specific code styling */
+.citation-block code,
+.citation-block pre,
+.citation-block .highlight,
+.citation-block .highlight * {
+  color: #495057 !important;
+  background-color: transparent !important;
+}
+
+/* Force override for any red colors */
+.citation-block *[style*="color: red"],
+.citation-block *[style*="color:red"],
+.citation-block *[style*="color: #ff0000"],
+.citation-block *[style*="color:#ff0000"] {
+  color: #495057 !important;
+}
+
+@media (max-width: 768px) {
+  .citation-content {
+    padding: 0.5rem;
+  }
+  
+  .citation-bibtex {
+    padding: 0.5rem;
+  }
+  
+  .citation-bibtex code {
+    font-size: 12px;
+  }
+  
+  .citation-actions {
+    flex-direction: column;
+  }
+  
+  .citation-actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Example:
+.custom-class {
+  color: #your-color;
+}
+*/
