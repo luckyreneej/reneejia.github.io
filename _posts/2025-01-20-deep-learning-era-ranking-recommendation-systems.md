@@ -13,6 +13,7 @@ tags:
   - transformers
   - sequential modeling
 last_modified_at: 2025-01-20T08:00:00-05:00
+read_time: "15-25 min read"
 toc: true
 toc_sticky: true
 ---
@@ -92,14 +93,7 @@ In this post, we cover the **Deep Learning Era (2016–2020)**: when deep neural
 3. **GRU4Rec → SASRec → BERT4Rec** (sequential models).  
 4. **YouTube 2016 + Facebook 2014** (industry blueprints).  
 
----
 
-## Coming Next: Part 3 – Modern Era (2020–2025)  
-
-In Part 3, we'll cover the **Modern Era**, where **transformers, foundation models, and LLMs** reshape ranking and recommendation:  
-- CLIP & multimodal retrieval.  
-- Pretraining for RecSys.  
-- LLMs as rankers, rerankers, and agents.
 
 ---
 

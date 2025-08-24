@@ -47,10 +47,29 @@ Welcome to my AI Learning Guide! Here you'll find a curated collection of articl
 </div>
 {% endif %}
 
-## All AI Learning Guide Articles
+### Part 3: Contemporary RecSys
+{% assign contemporary_post = site.posts | where_exp: "post", "post.title contains 'Contemporary RecSys'" | first %}
+{% if contemporary_post %}
+<div class="blog-post-preview" style="margin-bottom: 1.5em; padding: 1.2em; border: 1px solid #e9ecef; border-radius: 8px; background-color: #f8f9fa;">
+  <h4 style="margin-top: 0; margin-bottom: 0.5em; font-size: 1.1em; font-weight: 600;">
+    <a href="{{ contemporary_post.url }}" style="color: #1e3a8a; text-decoration: none;">{{ contemporary_post.title }}</a>
+  </h4>
+  <p style="margin: 0.5em 0; color: #666; font-size: 0.9em; text-align: left;">
+    {{ contemporary_post.date | date: "%B %d, %Y" }}
+  </p>
+  {% if contemporary_post.excerpt %}
+  <p style="margin: 0.5em 0; line-height: 1.4; font-size: 0.9em; text-align: left;">
+    {{ contemporary_post.excerpt | strip_html | truncatewords: 25 }}
+  </p>
+  {% endif %}
+</div>
+{% endif %}
+
+## Other AI Learning Guide Articles
 
 {% assign ai_posts = site.posts | where_exp: "post", "post.categories contains 'AI Learning Guide'" | sort: 'date' | reverse %}
-{% for post in ai_posts %}
+{% assign other_posts = ai_posts | where_exp: "post", "post.title contains 'AI Beginner'" %}
+{% for post in other_posts %}
 <div class="blog-post-preview" style="margin-bottom: 2em; padding: 1.5em; border: 1px solid #e9ecef; border-radius: 8px; background-color: #f8f9fa;">
   <h3 style="margin-top: 0; margin-bottom: 0.5em; font-size: 1.2em; font-weight: 600;">
     <a href="{{ post.url }}" style="color: #1e3a8a; text-decoration: none;">{{ post.title }}</a>
