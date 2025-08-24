@@ -42,6 +42,8 @@ body {
   font-size: 14px !important;
 }
 
+
+
 /* Citation block styles */
 .citation-block {
   margin: 1.5rem 0;
@@ -177,6 +179,94 @@ body {
     width: 100%;
     text-align: center;
   }
+}
+
+/* Terminal-style dark code blocks - Force override */
+.page__content pre, 
+.page__content code, 
+.page__content .highlight, 
+.page__content .highlight pre,
+.post__content pre,
+.post__content code,
+.post__content .highlight,
+.post__content .highlight pre,
+pre, code, .highlight, .highlight pre {
+  background-color: #2b2b2b !important;
+  color: #7dd3fc !important;
+  border: none !important;
+  border-radius: 8px !important;
+  font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', 'Monaco', 'Courier New', monospace !important;
+  font-size: 0.9em !important;
+  line-height: 1.6 !important;
+  font-weight: 400 !important;
+}
+
+/* Code blocks - Force override */
+.page__content pre, 
+.page__content .highlight pre,
+.post__content pre,
+.post__content .highlight pre,
+pre, .highlight pre {
+  padding: 1.5rem !important;
+  margin: 1.5rem 0 !important;
+  overflow-x: auto !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Inline code - Force override */
+.page__content p code, 
+.page__content li code, 
+.page__content td code, 
+.page__content th code,
+.post__content p code,
+.post__content li code,
+.post__content td code,
+.post__content th code,
+p code, li code, td code, th code {
+  background-color: #2b2b2b !important;
+  color: #7dd3fc !important;
+  padding: 0.3em 0.6em !important;
+  border-radius: 4px !important;
+  font-size: 0.85em !important;
+  border: none !important;
+}
+
+/* Remove borders from nested elements */
+.highlight pre {
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Simple gray table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.9em;
+}
+
+table th {
+  background-color: #f8f9fa !important;
+  color: #495057 !important;
+  padding: 0.8rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  border: 1px solid #dee2e6;
+}
+
+table td {
+  padding: 0.8rem 1rem;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+
+table tr:nth-child(even) td {
+  background-color: #fafafa;
+}
+
+table tr:hover td {
+  background-color: #f0f0f0;
 }
 
 /* Example:
